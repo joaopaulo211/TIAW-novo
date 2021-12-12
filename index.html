@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleLogin.css">
+  <link rel="shortcut icon" type="imagex/png" href="./imagens/icon.svg">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js" defer></script>
+  <script src="scriptCadastro.js" defer></script>
+  <title>Página Inicial</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand-title">EzBills</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="descricao">
+    <a>EzBills é um projeto de alunos da <strong>PUC - Minas</strong> com o intuito de auxiliar os usuários a terem
+      uma gestão e uma educação financeira através de videos, dicas, artigos e outros.
+      <br>
+      Desenvolvemos uma disciplina quanto aos gastos do usuário, facilitando a sua organização.
+    </a>
+  </div>
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <form><br>
+        <input type="text" id="userEmailLogin" class="fadeIn first" name="userEmail" placeholder="Usuário" autocomplete="off">
+        <input type="password" id="passwordLogin" class="fadeIn second" name="password" placeholder="*******" autocomplete="off">
+        <input type="submit" class="fadeIn third" value="Login" onclick="check()">
+      </form>
+      <div id="formFooter">
+        <a id="esqueceu" class="underlineHover" href="redefinir.html">Esqueceu sua senha?</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div id="button"></div>
+      <div id="container">
+        <div id="cont">
+          <div class="footer_center">
+            <h3>Copyright 2021 - EzBills - PUC MINAS</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

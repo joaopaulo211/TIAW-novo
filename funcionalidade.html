@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleFuncionalidade1.css">
+  <link rel="shortcut icon" type="imagex/png" href="./imagens/icon.svg">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js" defer></script>
+  <script src="scriptFunc.js" defer></script>
+  <script src="scriptCadastro.js" defer></script>
+
+  <title>Adicionar Valores</title>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar">
+      <div class="brand-title">EzBills</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Adicionar Valores</a></li>
+          <li><a href="dashboard.html">Gráficos</a></li>
+          <li><a href="dicas.html">Dicas</a></li>
+        </ul>
+      </div>
+  </div>
+
+  <h3 id="titulo">Vamos começar a controlar suas finanças?</h3>
+
+  <div id="container" class="div-container">
+    <div id="blocoDeGanhos">
+      <div id="adicionarGanho">
+        <form name="formGanhos">
+          <h5>Adicionar Renda</h5>
+          <input id="txtCodigo" type="text" class="form-control" placeholder="Código do cadastro" readonly>
+          <input id="digitarGanhos" type="number" name="txtGanho" placeholder="R$ 999 999,99" required>
+          <input id="categoriaDosGanhos" type="text" name="txtCategoriaGanho" placeholder="Categoria da renda" required>
+          <input id="botaoValor1" type="button" value="Adicionar" class="bnt-block submit"
+            onclick="cadGanhos(txtGanho.value, txtCategoriaGanho.value)">
+          <input id="botaoValor1" type="button" value="Editar" class="bnt-block submit"
+            onclick="altGanhos(txtGanho.value, txtCategoriaGanho.value)">
+          <input id="botaoValor1" type="button" value="Remover" class="bnt-block submit" onclick="delGanhos()">
+        </form>
+      </div>
+      <div id="ganhos" class="container">
+        <table id="tbGanhos">
+          <thead>
+            <tr>
+              <th scope="col">Código</th>
+              <th scope="col">Valores</th>
+              <th scope="col">Categoria</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+
+    <div id="blocoDeGastos">
+      <div id="adicionarGasto">
+        <form name="formGastos">
+          <h5>Adicionar Gasto</h5>
+          <input id="txtCodigo" type="text" class="form-control" placeholder="Código do cadastro" readonly>
+          <input id="digitarGastos" type="number" name="txtGasto" placeholder="R$ 999 999,99" required>
+          <input id="categoriaDosGastos" type="text" name="txtCategoriaGasto" placeholder="Categoria do gasto" required>
+          <input id="botaoValor2" type="button" value="Adicionar" class="bnt-block submit"
+            onclick="cadGastos(txtGasto.value, txtCategoriaGasto.value)">
+          <input id="botaoValor2" type="button" value="Editar" class="bnt-block submit"
+            onclick="altGastos(txtGasto.value, txtCategoriaGasto.value)">
+          <input id="botaoValor2" type="button" value="Remover" class="bnt-block submit" onclick="delGastos()">
+        </form>
+      </div>
+
+      <div id="gastos" class="container">
+        <table id="tbGastos">
+          <thead>
+            <tr>
+              <th scope="col">Código</th>
+              <th scope="col">Valores</th>
+              <th scope="col">Categoria</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <div id="button"></div>
+      <div id="container">
+        <div id="cont">
+          <div class="footer_center">
+            <h3>Copyright 2021 - EzBills - PUC MINAS</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
